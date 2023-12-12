@@ -1,0 +1,11 @@
+use("espoch_store")
+db.equipos.updateOne(
+    //query
+    {_id:ObjectId('6611216843151')},
+    //change
+    {
+        $inc:{
+            price:100,
+        }
+    }
+)
