@@ -1,0 +1,22 @@
+//ELIMINAR 1 DATO
+use("espoch_store")
+
+db.inventory.updateOne({ }, {
+    $pull: {
+        tags:"book"
+    }
+})
+db.inventory.find() 
+
+/*
+AGREGAR VARIOS DATOS
+use("espoch_store")
+
+db.inventory.updateOne({ }, {
+    $pull: {
+        tags:{
+            $in: ["appliance","school"]
+        }
+    }
+})
+*/

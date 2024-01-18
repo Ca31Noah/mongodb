@@ -1,0 +1,18 @@
+//MODIFICAR EL CAMPO
+use("sample_training")
+db.zips.updateMany(
+    //query
+    {city:"CLEVELAND"},
+    //update(2369,1244)
+    {
+        $rename:{
+            dir2:"Orellana",
+            dir1:"Loreto",
+        }
+    }
+)
+
+/*
+
+myAttr:"my_data",
+*/

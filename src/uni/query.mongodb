@@ -1,2 +1,0 @@
-use("espoch_store")
-db.universidades.find()

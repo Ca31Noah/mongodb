@@ -1,0 +1,4 @@
+//BUSCAR MOSTRAR
+use("espoch_store")
+db.inventory.find()
+

@@ -1,0 +1,18 @@
+//AGG UN CAMPO
+
+use("sample_training")
+db.zips.updateMany(
+    //query
+    {city:"CLEVELAND"},
+    //update(2369,1244)
+    {
+        $set:{
+            dir1:"Loreto",
+            dir2:"Orellana",
+        }
+    }
+)
+
+/*
+myAttr:"hola",
+*/

@@ -1,2 +1,2 @@
 use("espoch_store")
-db.espoch.find()
+db.iot.find()

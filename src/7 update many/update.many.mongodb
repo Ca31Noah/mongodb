@@ -1,0 +1,12 @@
+//INCREMENTAR
+use("sample_training")
+db.zips.updateMany(
+    //query
+    {city:"CLEVELAND"},
+    //update(2369,1244)
+    {
+        $inc:{
+            pop:1000,
+        }
+    }
+)

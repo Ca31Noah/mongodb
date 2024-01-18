@@ -1,0 +1,9 @@
+//ELIMINAR DATOS CON ID
+use("espoch_store")
+
+db.inventory.updateOne({_id:4}, {
+    $pull: {
+        tags:"headphone"
+    }
+})
+db.inventory.find() 

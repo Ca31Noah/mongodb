@@ -1,0 +1,17 @@
+//ELIMINAR EL CAMPO CREADO
+use("sample_training")
+db.zips.updateMany(
+    //query
+    {city:"CLEVELAND"},
+    //update(2369,1244)
+    {
+        $unset:{
+            Loreto:"",
+            Orellana:"",
+        }
+    }
+)
+
+/*
+my_data:"",
+            */

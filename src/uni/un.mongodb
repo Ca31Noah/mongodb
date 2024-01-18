@@ -1,7 +1,0 @@
-use("espoch_store")
-db.universidades.updateOne(
-    //query
-    {_id:ObjectId('6611216843151')},
-    //change
-    
-)
