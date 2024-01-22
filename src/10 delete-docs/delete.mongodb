@@ -1,0 +1,9 @@
+//Eliminames el producto 1
+use("espoch_store")
+db.products.deleteOne({_id:1})
+
+//Eliminar todos los que tengan el precio de 100$
+db.products.deleteOne({price:100})
+
+//Elimina too
+db.products.drop()

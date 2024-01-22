@@ -1,0 +1,12 @@
+use("espoch_store")
+db.inventory.find({ qty: { $gt: 20} })
+// Traera los valores 25 y 30, sacara solamente el n°15 y asi cumple Mayor Igual que 20
+
+db.inventory.find({ qty: { $gte: 20} })
+
+//Using $lt (<:Menor que) $lte (<= Menor Igual)
+
+//Traera solo el valor 15 y excluiria todos los otros valores
+
+
+db.inventory.find({ qty: { $lt:20}})
